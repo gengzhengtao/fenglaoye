@@ -5,9 +5,12 @@ body {
     font-size: 12px;
     font-family: "Segoe UI", "Lucida Grande", Helvetica, Arial, "Microsoft YaHei", FreeSans, Arimo, "Droid Sans", "wenquanyi micro hei", "Hiragino Sans GB", "Hiragino Sans GB W3", Arial, sans-serif;
     color: #333;
-    a {
-        text-decoration: none
+    a:link, a:visited, a:hover {
+        color: #000;
+        text-decoration: none;
     }
+    overflow-y:auto;
+    overflow-x:hidden
 }
 
 .header {
@@ -30,7 +33,7 @@ body {
             display: inline;
             margin: 0px 10px;
             a {
-                 font-size: 9px;
+                font-size: 9px;
                 color: #ffffff;
             }
         }
@@ -56,129 +59,162 @@ body {
     }
 }
 
-#logo{
+#logo {
     margin: 80px auto 0px auto;
     position: relative;
     width: 150px;
     height: 150px;
     background-size: cover;
     background-position: 50% 50%;
-    background-image:url('../images/logo.png')
+    background-image: url('../images/logo.png')
 }
 
-#logo-text{
+#logo-text {
     margin: 22px auto 0px auto;
     position: absolute;
-    width:100%;
+    width: 100%;
     height: 2em;
-    color:rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
     font-size: 2em;
     letter-spacing: 10px
 }
 
-.timeline{
+.timeline {
     position: relative;
     margin: 195px auto 0px auto;
     height: 1.5px;
-    background-color:rgba(255, 255, 255,0.3)
+    background-color: rgba(255, 255, 255, 0.3)
 }
 
-.stage{
+.stage {
     position: absolute;
     top: -2px;
     width: 24px;
     height: 2.5px;
-    background-color: rgba(255, 255, 255,1)
+    background-color: rgba(255, 255, 255, 1)
 }
 
-#stage1{
-    
+#stage1 {
     left: 20%
 }
 
-#stage2{
-    
+#stage2 {
     left: 38%
 }
 
-#stage3{
-    
+#stage3 {
     left: 56%
 }
 
-#stage4{
-  
+#stage4 {
     left: 72%
 }
 
-.stage-text{
+.stage-text {
     position: absolute;
     top: -25px;
     width: 100px;
-    color: rgba(255,255,255,1);
+    color: rgba(255, 255, 255, 1);
     letter-spacing: 0.8px
 }
 
-.stage-text-bottom{
+.stage-text-bottom {
     position: absolute;
     top: 20px;
     width: 160px;
-    color: rgba(255,255,255,1);
+    color: rgba(255, 255, 255, 1);
     font-size: 0.8em;
-    font-weight:lighter;
+    font-weight: lighter;
     letter-spacing: 2px;
     line-height: 1.8em;
 }
 
-
-.recount1{
+.recount1 {
     position: absolute;
-    margin:203px auto;
+    margin: 203px auto;
     width: 100%;
     height: 313px;
-    background-color: rgba(255,255,196,0.5);
+    background-color: rgba(255, 255, 255, 1);
 }
 
-.decs{
+.decs {
     position: absolute;
     top: 30px;
     left: 17%;
     width: 33%;
-    background-color: red;
+    background-color: rgba(255, 255, 255, 1);
 }
 
-.title{
+.title {
     font-size: 1.5em;
-    font-weight:bold;
-    line-height:0.5em
+    font-weight: bold;
+    line-height: 0.5em
 }
 
-.sub-title{
-    color:rgba(255,204,102,1);
-    line-height:0em
+.sub-title {
+    color: rgba(255, 204, 102, 1);
+    line-height: 0em
 }
 
-.left-text{
-    letter-spacing:1.5px;
-    line-height:2em
+.left-text {
+    letter-spacing: 1.5px;
+    line-height: 2em
 }
 
-.button{
-    width:68px;
+.button {
+    width: 68px;
     border: 1px solid #000;
-    text-align:center;
+    text-align: center;
     font-size: 0.9em
 }
 
-.decs-image{
+.decs-left {
     position: absolute;
-    top: 30px;
+    top: 20%;
     margin-left: 60%;
     width: 33%;
     height: 187px;
-    background-color: blue;
+    background-color: rgba(255, 255, 255, 1);
 }
 
-.clear{
+.desc-image {
+    position: absolute;
+    width: 40%;
+    height: 100%;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-image: url('../images/grass1.jpg')
+}
+
+.desc-text {
+    position: absolute;
+    top: 20%;
+    margin-left: 40%;
+    width: 30%;
+    height: 80%;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-image: url('../images/text2.jpg')
+}
+
+.shade1 {
+    position: absolute;
+    margin: 516px auto;
+    width: 100%;
+    height: 666px;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-color: rgba(42, 47, 66, 0.9);
+}
+
+.display1 {
+    position: absolute;
+    margin: 516px auto;
+    width: 100%;
+    height: 666px;
+    background-image: url('../images/hill.jpg')
+}
+
+.clear {
     clear: both;
 }
