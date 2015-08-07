@@ -15,184 +15,239 @@
         <!-- endbuild -->
         <!-- build:css(.tmp) styles/main.css -->
         <link rel="stylesheet" href="styles/main.css">
-        <link rel="stylesheet" href="styles/side.css">
         <!-- endbuild -->
     </head>
     <body>
         <!--[if lt IE 10]>
->
+                                    <p class="browserupgrade">浏览器版本版本太低. 请 <a href="http://browsehappy.com/">升级你的浏览器/a> 来提高你的体验</p>
         <![endif]-->
         <header class="header">
-            <nav class="navEnglish">
-                <ul>
-                    <li><a href="#">ABOUT US</a></li>
-                    <li><a href="#">HOME TOWN</a></li>
-                    <li><a href="#">CONVER STION</a></li>
-                    <li><a href="#">SHOPPING</a></li>
-                    <li><a href="#">MAGAZING</a></li>
-                    <li><a href="#">SHOPPING CART</a></li>
-                </ul>
-            </nav>
             <nav class="nav">
                 <ul>
-                    <li><a href="#">关于我们</a></li>
-                    <li><a href="#">远方乡土</a></li>
-                    <li><a href="#">围炉夜话</a></li>
-                    <li><a href="#">开始购茶</a></li>
-                    <li><a href="#">电子杂志</a></li>
-                    <li><a href="#">购物小车</a></li>
-                </ul>
-            </nav>
-        </header>
-        <!-- 轮播广告 -->
-        <div id="container" class="container">
-            <div class="section active" id="section0">
+                    <li>
+                        <ul>
+                            <li><a style="color: rgba(255,255,255,1);font-size:0.8em;" href="#">ABOUT US</a></li>
+                            <li><a href="#">关于我们</a><li>
+                        </ul>
+                    </li>
+                        <li>
+                            <ul>
+                                <li><a style="color: rgba(255,255,255,1);font-size:0.8em;" href="#">HOME TOWN</a></li>
+                                <li><a href="#">远方乡土</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul>
+                                <li><a style="color: rgba(255,255,255,1);font-size:0.8em;" href="#">CONVER STION</a></li>
+                                <li>
+                                    <a href="#">围炉夜话</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul>
+                                <li><a style="color: rgba(255,255,255,1);font-size:0.8em;" href="#">SHOPPING</a></li>
+                                <li>
+                                    <a href="#">开始购茶</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul>
+                                <li><a style="color: rgba(255,255,255,1);font-size:0.8em;" href="#">MAGAZING</a></li>
+                                <li>
+                                    <a href="#">电子杂志</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul>
+                                <li><a style="color: rgba(255,255,255,1);font-size:0.8em;" href="#">SHOPPING CART</a></li>
+                                <li>
+                                    <a href="#">购物小车</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
 
+            <!-- 轮播广告 -->
+            <div id="carousel-generic" class="carousel slide carousel-fade" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-generic" data-slide-to="2"></li>
+                </ol>
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img src="images/banner1.jpg" alt="山">
+                        <div class="carousel-caption">
+                            你好
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="images/banner2.jpg" alt="云">
+                        <div class="carousel-caption">
+                            你好
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="images/banner3.jpg" alt="屋">
+                        <div class="carousel-caption">
+                            你好
+                        </div>
+                    </div>
+                </div>
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-generic" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carousel-generic" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+                </a>
             </div>
-            <div class="section" id="section1">
-
+            <!--logo-->
+            <div style="text-align:center">
+                <div id="logo"></div>
+                <div id="logo-text">/一念凈葉，故里情懷/</div>
             </div>
-            <div class="section" id="section2">
-
-            </div>
-            <div class="section" id="section3">
-
-            </div>
-        </div>
-
-        <!--logo-->
-        <div style="text-align:center">
-            <div id="logo"></div>
-            <div id="logo-text">/一念凈葉，故里情懷/</div>
-        </div>
-        <!--时间线-->
-
-        <div class="timeline">
-            <div class="stage" id="stage1">
-                <div class="stage-text">BC 1462 /明朝</div>
-                <div class="stage-text-bottom">据《大明一统志》，高黎贡山产茶历史自明朝有据可查，但多为宅院与寺庙周围古茶树，供僧侣和望族专用，产茶有名，最佳。
+            <!--时间线-->
+            <div class="timeline">
+                <div class="stage" id="stage1">
+                    <div class="stage-text">BC 1462 /明朝</div>
+                    <div class="stage-text-bottom">据《大明一统志》，高黎贡山产茶历史自明朝有据可查，但多为宅院与寺庙周围古茶树，供僧侣和望族专用，产茶有名，最佳。
+                    </div>
+                </div>
+                <div class="stage" id="stage2">
+                    <div class="stage-text">BC 1879 /清末</div>
+                    <div class="stage-text-bottom">
+                        封老爷 - 封镇国 - 束鬓从戎，官至都指挥使司，深谙茶可富民，可荣边贸之理，便以政倡茶。
+                    </div>
+                </div>
+                <div class="stage" id="stage3">
+                    <div class="stage-text">BC 1912 /民國</div>
+                    <div class="stage-text-bottom">
+                        封老爷之子心系故乡，历尽艰险，驮运茶籽依山而种，高黎贡山麓沿怒江峡谷的野生放养型古树群渐成规模。
+                    </div>
+                </div>
+                <div class="stage" id="stage4">
+                    <div class="stage-text">BC 2012</div>
+                    <div class="stage-text-bottom">
+                        穿过原始森林，偶然遇见了遗落其中的古茶树，原始而静谧，怀着一份故里情怀，我们做了一杯至纯至净的茶—封老爷
+                    </div>
                 </div>
             </div>
-            <div class="stage" id="stage2">
-                <div class="stage-text">BC 1879 /清末</div>
-                <div class="stage-text-bottom">
-                    封老爷 - 封镇国 - 束鬓从戎，官至都指挥使司，深谙茶可富民，可荣边贸之理，便以政倡茶。
+            <!--描述1-->
+            <div class="recount1">
+                <div class="decs">
+                    <p class="title">一粒种子，一念净叶，为了你心中不一样的故里情怀<p>
+                    <p class="sub-title">◼︎ GAO LI GONG MOUNTAIN</p>
+                    <p>------------------------------------------------------------</p>
+                    <p class="left-text">今天，给你一粒种子，你是否会轻轻的将它在故乡的泥土里种下？<br/>
+                    100年后，这里种子会长成一棵树，挂满一片片的美好，属于你，也属于岁月！<br/>
+                    100年前，封老爷曾种下一粒粒种子，而今已然成了一个个古树，长满了一念念的叶子，里面藏着封老爷安放的故里情怀。</p>
+                    <br/>
+                    <p class="button">
+                    <a href="#">认识我们</a>
+                    </p>
+                </div>
+                <div class="decs-left">
+                    <div class="desc-image"></div>
+                    <div class="desc-text"></div>
                 </div>
             </div>
-            <div class="stage" id="stage3">
-                <div class="stage-text">BC 1912 /民國</div>
-                <div class="stage-text-bottom">
-                    封老爷之子心系故乡，历尽艰险，驮运茶籽依山而种，高黎贡山麓沿怒江峡谷的野生放养型古树群渐成规模。
+            <!-- 展示1-->
+            <div class="display1">
+                <img id="display1-image"src="images/hill.jpg" style="width:100%;height:100px">
+                <div class="shade1">
+                    <div id="nav-detail">
+                        <div class="detail">
+                            <p class="detail-title">远方光影</p>
+                            <p class="detail-title-en">PHOTOS</p>
+                            <a href="#">
+                            <img src="images/photos.png" class="detail-img">
+                            </a>
+                            <hr class="detail-line" />
+                            <p class="detail-desc">昨夜，下雨啦，杜鹃树下一地颜色，凉凉的风，流过树梢，婆娑声声，捎带着溪水潺潺，于是，我想站上山坡看看大地的画板，走进森林数数楼下的阳光。。。。。。</p>
+                            <hr class="detail-line" />
+                            <p style="font-size:0.88em"><a href="#"> 观赏照片 >>></a></p>
+                        </div>
+                        <div class="detail">
+                            <p class="detail-title">围炉夜话</p>
+                            <p class="detail-title-en">CONVERSATION</p>
+                            <a href="#">
+                            <img src="images/conversation.png" class="detail-img">
+                            </a>
+                            <hr class="detail-line" />
+                            <p class="detail-desc">叶落，红炉炭火，映照脸庞，汲水一壶，听着噗噗声，此起彼伏，一杯茶，一本书，三五知己，阅读记忆里面的问题，还有故事里的话题。。。。。。</p>
+                            <hr class="detail-line" />
+                            <p style="font-size:0.88em"><a href="#"> 阅读文章 >>></a></p>
+                        </div>
+                        <div class="detail">
+                            <p class="detail-title">开始购茶</p>
+                            <p class="detail-title-en">SHOPPING</p>
+                            <a href="#">
+                            <img src="images/shopping.png" class="detail-img">
+                            </a>
+                            <hr class="detail-line" />
+                            <p class="detail-desc">遇见，遗落的古茶树，是恩赐！怀着虔诚与感恩之心，摘下纯净的叶子，做一杯最天然的古茶树，让岁月的恬静味道，与你相遇。。。。。。
+                            </p>
+                            <hr class="detail-line" />
+                            <p style="font-size:0.88em"> <a href="#">查看产品 >>></a></p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="stage" id="stage4">
-                <div class="stage-text">BC 2012</div>
-                <div class="stage-text-bottom">
-                    穿过原始森林，偶然遇见了遗落其中的古茶树，原始而静谧，怀着一份故里情怀，我们做了一杯至纯至净的茶—封老爷
+            <!--描述2-->
+            <div class="recount2">
+                <div class="decs">
+                    <p class="title">最纯净古树茶是初心，送给满是纯净情怀的你。<p>
+                    <p class="sub-title">◼︎ GAO LI GONG MOUNTAIN</p>
+                    <p>------------------------------------------------------------</p>
+                    <p class="left-text">高黎贡山为世界自然基金（WWF）的A级会员，素有世界物种基因库之称，这<br/>
+                    里的原始森林，草木繁茂，造就了世界上生物最多样化的一个茶区，每一片<br/>
+                    古树茶叶的生长，都唤醒着上亿年的生态群落记忆。</p>
+                    <br/>
+                    <p class="button">
+                    <a href="#">认识我们</a>
+                    </p>
+                </div>
+                <div class="decs-left">
+                    <div class="desc-image" id="desc-image2"></div>
+                    <div class="desc-text" id="desc-text2"></div>
                 </div>
             </div>
-        </div>
-
-        <!--描述1-->
-        <div class="recount1">
-            <div class="decs">
-                <p class="title">一粒种子，一念净叶，为了你心中不一样的故里情怀<p>
-                <p class="sub-title">◼︎ GAO LI GONG MOUNTAIN</p>
-                <p>------------------------------------------------------------</p>
-                <p class="left-text">今天，给你一粒种子，你是否会轻轻的将它在故乡的泥土里种下？<br/>
-                100年后，这里种子会长成一棵树，挂满一片片的美好，属于你，也属于岁月！<br/>
-                100年前，封老爷曾种下一粒粒种子，而今已然成了一个个古树，长满了一念念的叶子，里面藏着封老爷安放的故里情怀。</p>
-                <br/>
-                <p class="button">
-                <a href="#">认识我们</a>
-                </p>
+            <div class="product">
+                <div class="product-title">产品推荐 / PRODUCT RECOMMENDATION</div>
+                <div class="product-detail"></div>
             </div>
-            <div class="decs-left">
-                <div class="desc-image"></div>
-                <div class="desc-text"></div>
-            </div>
-        </div>
-
-        <!-- 展示1-->
-        <div class="display1">
-           <img id="display1-image"src="images/hill.jpg" style="width:100%;height:100px">
-           <div class="shade1">
-             <div id="nav-detail">
-                 <div class="detail">
-                   <p class="detail-title">远方光影</p>
-                   <p class="detail-title-en">PHOTOS</p>
-                   <img src="images/photos.png" class="detail-img">
-                   <hr class="detail-line" />
-                   <p class="detail-desc">昨夜，下雨啦，杜鹃树下一地颜色，凉凉的风，流过树梢，婆娑声声，捎带着溪水潺潺，于是，我想站上山坡看看大地的画板，走进森林数数楼下的阳光。。。。。。</p>
-                   <hr class="detail-line" />
-                   <p style="font-size:0.88em"> 观赏照片 >>></p>
-                 </div>
-                 <div class="detail">
-                   <p class="detail-title">围炉夜话</p>
-                   <p class="detail-title-en">CONVERSATION</p>
-                   <img src="images/conversation.png" class="detail-img">
-                    <hr class="detail-line" />
-                   <p class="detail-desc">叶落，红炉炭火，映照脸庞，汲水一壶，听着噗噗声，此起彼伏，一杯茶，一本书，三五知己，阅读记忆里面的问题，还有故事里的话题。。。。。。</p>
-                   <hr class="detail-line" />
-                   <p style="font-size:0.88em"> 阅读文章 >>></p>
-                 </div>
-                 <div class="detail">
-                   <p class="detail-title">开始购茶</p>
-                   <p class="detail-title-en">SHOPPING</p>
-                   <img src="images/shopping.png" class="detail-img">
-                   <hr class="detail-line" />
-                   <p class="detail-desc">遇见，遗落的古茶树，是恩赐！怀着虔诚与感恩之心，摘下纯净的叶子，做一杯最天然的古茶树，让岁月的恬静味道，与你相遇。。。。。。
-                   </p>
-                   <hr class="detail-line" />
-                   <p style="font-size:0.88em"> <a href="#">查看产品 >>></a></p>
-                 </div>
-             </div>
-          </div>
-        </div>
-        
-
- <!--描述2-->
-        <div class="recount2">
-            <div class="decs">
-                <p class="title">最纯净古树茶是初心，送给满是纯净情怀的你。<p>
-                <p class="sub-title">◼︎ GAO LI GONG MOUNTAIN</p>
-                <p>------------------------------------------------------------</p>
-                <p class="left-text">高黎贡山为世界自然基金（WWF）的A级会员，素有世界物种基因库之称，这<br/>
-                里的原始森林，草木繁茂，造就了世界上生物最多样化的一个茶区，每一片<br/>
-                古树茶叶的生长，都唤醒着上亿年的生态群落记忆。</p>
-                <br/>
-                <p class="button">
-                <a href="#">认识我们</a>
-                </p>
-            </div>
-            <div class="decs-left">
-                <div class="desc-image" id="desc-image2"></div>
-                <div class="desc-text" id="desc-text2"></div>
-            </div>
-        </div>
-
-        <!-- build:js(.) scripts/vendor.js -->
-        <!-- bower:js -->
-        <script src="/bower_components/modernizr/modernizr.js"></script>
-        <script src="/bower_components/jquery/dist/jquery.js"></script>
-        <!-- endbower -->
-        <!-- endbuild -->
-        <!-- build:js scripts/main.js -->
-        <script src="scripts/main.js"></script>
-        <script type="text/javascript" src="scripts/side.js"></script>
-        <!-- endbuild -->
-        <script type="text/javascript">
-                $(function(){
-                    $("#container").switchPage({
-                        'loop' : true,
-                        'keyboard' : true,
-                        'direction' : 'horizontal'
-                    });
-                });
-        </script>
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-                                                                                                    
-        </script>
-    </body>
-</html>
+            <!-- build:js(.) scripts/vendor.js -->
+            <!-- bower:js -->
+            <script src="/bower_components/modernizr/modernizr.js"></script>
+            <script src="/bower_components/jquery/dist/jquery.js"></script>
+            <!-- endbower -->
+            <!-- endbuild -->
+            <!-- build:js scripts/plugins.js -->
+            <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/carousel.js"></script>
+            <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js"></script>
+            <!-- endbuild -->
+            <!-- build:js scripts/main.js -->
+            <script src="scripts/main.js"></script>
+            <!-- endbuild -->
+            <script type="text/javascript">
+                                $('.carousel').carousel({
+                                    interval: 3000,
+                                    pause: "hover"
+                                })
+            </script>
+            <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+            <script>
+                                                                                                                                                            
+            </script>
+        </body>
+    </html>
