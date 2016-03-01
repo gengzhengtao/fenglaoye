@@ -1,0 +1,28 @@
+.header-image{
+	height: 300px;
+	background-color: rgba(123, 255, 255, 1);
+}
+
+.aboutus-overview{
+    
+    margin:0 auto;
+	width:912px;
+	height: 228px;
+    background-color: rgba(212,255,255,1);
+}
+
+.overview-decs{
+    position: absolute;
+    margin-top:50px;
+    margin-left: 590px;
+    width: 318px; 
+    height: 116px;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-image: url('../images/about-overview.png')
+}
+.brand-story{
+	height: 728px;
+	text-align: center;
+	background-color:RGBA(20, 26, 63, 1);
+}

@@ -4,7 +4,6 @@
 
 
 body {
-    background: #fafafa;
     font-size: 12px;
     font-family: "Segoe UI", "Lucida Grande", Helvetica, Arial, "Microsoft YaHei", FreeSans, Arimo, "Droid Sans", "wenquanyi micro hei", "Hiragino Sans GB", "Hiragino Sans GB W3", Arial, sans-serif;
     color: #333;
@@ -12,9 +11,11 @@ body {
         color: #000;
         text-decoration: none;
     }
+    height:5235px;
     overflow-y:auto;
     overflow-x:hidden
 }
+
 
 //fade 效果 begin
 .carousel-fade {
@@ -478,8 +479,8 @@ body {
     position: absolute;
     margin: 2706px auto;
     width: 100%;
-    height: 680px;
-    background-color: rgba(255, 255, 111, 1);
+    height: 900px;
+    background-color: rgba(255, 255, 255, 1);
 }
 
 .image-content{
@@ -494,12 +495,282 @@ body {
     align-content: space-between;
     justify-content: space-between;
     color: rgb(255, 255, 255);
-    background-color: rgba(111, 255, 255, 1);
+    background-color: rgba(255, 255, 255, 1);
 }
 .image-item{
+    position: relative;
+    top:30px;
     width:250px;
     height:300px;
     background-color: rgba(47, 49, 70, 1);
+}
+
+.image-title{
+    margin-top:5px;
+    margin-left: 8px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    font-size:1.67em;
+    color:rgba(255, 204, 102, 1);
+}
+
+.image-text{
+    margin-top:10px;
+    margin-left: 8px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+}
+.image-line{
+    margin-top: 5px;
+    margin-left: 8px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    width: 80%;
+    border: none;
+    border-top: 1px solid rgba(255, 204, 102, 0.5)
+}
+
+.serial-number{
+    position: absolute;
+    top: 185px;
+    margin-left:220px;
+}
+
+.about-more{
+    position: relative;
+    top: 160px;
+    margin: 0 auto;
+    width:116px;
+    background-color: rgba(255, 204, 102,1);
+    color:rgba(255, 255, 255, 1);
+    font-size:1.2em;
+    text-align: center;
+
+}
+
+.abount-bottom-line{
+    position: relative;
+    top: 240px;
+    margin: 0 auto;
+    width: 804px;
+    border-top: 1px solid rgba(255, 204, 102, 1)
+}
+
+
+.user-desc{
+    position: absolute;
+    margin: 3607px auto;
+    width: 100%;
+    height: 494px;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.user-desc-content{
+    position: relative;
+    top: 64px;
+    margin: 0 auto;
+    width: 804px;
+    height: 366px;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-between;
+   
+}
+.line{
+    width:100%;
+    height: 122px;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-between;
+    
+}
+
+.item-header{
+    width:230px;
+    height:94px;
+    text-align:center;
+    
+}
+.item-text{
+    width:574px;
+    height:94px;
+   
+}
+
+
+.bottom-hill{
+    position: absolute;
+    margin: 4101px auto;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.bottom-hill-image{
+    position: relative;
+    top:200px;
+    width:100%;
+    height:100px;
+}
+
+.bottom-logo{
+    position: absolute;
+    margin: 4501px auto;
+    width: 100%;
+    height:600px;
+    text-align:center;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+
+.bottom-logo-image{
+    position: relative;
+    margin: 0 auto;
+    top: 80px;
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-image: url('../images/logo-golden.png');
+}
+
+.bottom-logo-desc{
+      position: relative;
+      top: 100px;
+      font-weight: bold;
+      color: RGBA(181, 142, 64, 1)
+}
+
+.button-g {
+    width: 100px;
+    margin: 20px auto 0 auto;
+    border: 1px solid RGBA(181, 142, 64, 1);
+    text-align: center;
+    font-size: 0.9em;
+    letter-spacing: 5px;
+}
+footer{
+    position: absolute;
+    margin: 5001px auto 0 auto;
+    width: 100%;
+    height:234px;
+    background-color: #2c3145;
+}
+
+.foot-content{
+    position: relative;
+    top:50px;
+    margin: 0px auto;
+    width:804px;
+    height: 134px;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: flex-start;
+}
+
+.foot-content-left{
+    width: 426px;
+    height: 100%;
+}
+
+/*水平翻转*/
+.flipx {
+    -moz-transform:scaleX(-1);
+    -webkit-transform:scaleX(-1);
+    -o-transform:scaleX(-1);
+    transform:scaleX(-1);
+    /*IE*/
+    filter:FlipH;
+}
+.foot-content-left span{
+    margin-right: 10px;
+    font-weight:bold;
+    color:RGBA(181, 142, 64, 1);
+}
+.foot-left-line{
+    margin-top: 10px;
+    margin-bottom: 15px;
+    margin-right: 0px;
+    border: none;
+    border-top: 1px solid rgba(255, 204, 102, 0.5)
+}
+
+.foot-content-left p{
+    color:RGBA(255, 255, 255, 1);
+}
+
+.foot-content-right{
+    width: 340px;
+    height: 100%;
+    color:RGBA(181, 142, 64, 1);
+}
+.foot-content-right-line{
+    position: relative;
+    left: 60px;
+    width:1px;
+    height:132px;
+    background-color: rgba(255, 204, 102, 0.5)
+}
+
+.foot-content-right-desc{
+    position:relative;
+    top:-132px;
+    left:148px;
+}
+.right-qrcode{
+    position:relative;
+    top:-235px;
+    left:230px;
+    color:rgba(255,255,255,1);
+    text-align:center;
+}
+.weibo{
+    background:url(../images/weibo.png) 0 0 no-repeat;
+}
+
+.qzone{
+    background:url(../images/weibo.png) 0 0 no-repeat;
+}
+
+.search-input{
+    width: 112px;
+    height:1.5em;
+    border: 1px solid rgba(255, 204, 102, 0.5);
+
+}
+input,button{ vertical-align:middle} 
+.search-button{
+    width: 48px;
+    height:1.5em;
+    line-height:1px;
+    color:rgba(255,255,255,1);
+    border: 1px solid rgba(255, 204, 102, 1);
+    background-color:rgba(255, 204, 102, 1);
+}
+
+/*垂直翻转*/
+.flipy {
+    -moz-transform:scaleY(-1);
+    -webkit-transform:scaleY(-1);
+    -o-transform:scaleY(-1);
+    transform:scaleY(-1);
+    /*IE*/
+    filter:FlipV;
+}
+
+/*垂直翻转*/
+.rotate-90 {
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg)
 }
 .clear {
     clear: both;
